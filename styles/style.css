@@ -1,12 +1,12 @@
 body {
   background-color: #acacac;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 375px 8fr 1fr;
+  grid-template-columns: 1fr 375px 6fr 1fr;
   grid-template-rows: auto auto;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -17,9 +17,6 @@ body {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 1em 2em;
   background-color: #000000;
   border-radius: 5px 0 0 0;
@@ -32,6 +29,7 @@ body {
   grid-row-end: 2;
   background-color: #ffffff;
   border-radius: 0 5px 0 0;
+  padding: 3em 4em;
 }
 
 .contacts-section {
@@ -46,9 +44,6 @@ body {
 .hr {
   height: 1px;
   border: 0;
-  /* For not to lose hr inside of flex-block */
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .hr-s {
@@ -66,6 +61,10 @@ body {
 .hr-info-section {
   margin-top: 2em;
   margin-bottom: 4em;
+}
+
+.hr-main-section {
+  margin: 0;
 }
 
 .main-photo {
@@ -162,4 +161,148 @@ h3 {
   line-height: 1.8em;
   font-size: 1.2em;
   margin-top: .6em;
+}
+
+.main-section-h3 {
+  font-size: 2em;
+  margin-left: 2.4em;
+}
+
+.main-section-item {
+  border-left: 1px solid #bc9353;
+}
+
+.main-section-item::before {
+  background-color: #bc9353;
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -35px;
+}
+
+.main-section-skills::before {
+  background-image: url("/assets/icons/star.svg");
+}
+
+.main-section-work::before {
+  background-image: url("/assets/icons/graph-line-screen.svg");
+}
+
+.main-section-item-content {
+  padding-top: 2em;
+  padding-left: 5em;
+}
+
+.main-section-skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.main-section-item-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-50::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.progress-25::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 25%,#e6dbc9 25%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%,#bc9353 25%,#e6dbc9 25%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.progress-75::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 75%,#e6dbc9 75%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%,#bc9353 75%,#e6dbc9 75%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.progress-100::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+  background: #bc9353;
+}
+
+.main-section-skills-header {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+.main-section-skills-text {
+  font-size: 1.2em;
+  padding-top: .1em;
+}
+
+.main-section-work-company-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main-section-work-experience-period {
+  color: #bc9353;
+  font-weight: bold;
+  padding-left: 1.5em;
+}
+
+.main-section-work-location {
+  font-size: 1.3em;
+}
+
+.main-section-work-location::after {
+  content: ", ";
+}
+
+.main-section-work-position {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+  margin: 0;
+  margin-bottom: .2em;
+}
+
+.list-style-type-dash {
+  list-style-type: none;
+}
+
+.list-style-type-dash li::before {
+  content: "-";
+  padding-right: .3em;
+}
+
+.main-section-work-item + .main-section-work-item {
+  margin-top: 4em;
 }
