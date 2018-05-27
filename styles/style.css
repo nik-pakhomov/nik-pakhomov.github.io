@@ -79,27 +79,31 @@ body {
 
 h1 {
   color: #ffffff;
-  font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin-bottom: .3em;
+  font-weight: normal;
 }
 
 h2 {
   color: #ffffff;
   font-size: 2em;
   margin-top: -.3em;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   font-weight: normal;
 }
 
 h3 {
   color: #bc9353;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.5em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-  margin-top: 2em;
-  margin-bottom: 0em;
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .info-section-info-table {
@@ -131,11 +135,12 @@ h3 {
 
 .info-section-key-qualities-container>div {
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  height: 85px;
-  width: 140px;
+  height: 80px;
+  width: 135px;
+  min-width: 135px;
   padding-top: 55px;
   display: inline-block;
   border: 1px solid #bc9353;
@@ -165,7 +170,7 @@ h3 {
 
 .main-section-h3 {
   font-size: 2em;
-  margin-left: 2.4em;
+  margin-left: 2em;
 }
 
 .main-section-item {
@@ -174,17 +179,17 @@ h3 {
 
 .main-section-item::before {
   background-color: #bc9353;
-  height: 70px;
-  width: 70px;
-  border-radius: 70px;
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
   content: "";
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 65%;
 
   position: absolute;
-  margin-top: -10px;
-  margin-left: -35px;
+  margin-top: -25px;
+  margin-left: -45px;
 }
 
 .main-section-skills::before {
@@ -195,9 +200,23 @@ h3 {
   background-image: url("/assets/icons/graph-line-screen.svg");
 }
 
+.main-section-work-experience::before {
+  background-image: url("/assets/icons/business-person.svg");
+}
+
+.main-section-education::before {
+  background-image: url("/assets/icons/students-cap.svg");
+  background-size: 85%;
+}
+
+.main-section-about-me::before {
+  background-image: url("/assets/icons/happy-face.svg");
+  background-size: 70%;
+}
+
 .main-section-item-content {
   padding-top: 2em;
-  padding-left: 5em;
+  padding-left: 4em;
 }
 
 .main-section-skills-wrapper {
@@ -207,20 +226,8 @@ h3 {
 }
 
 .main-section-item-content ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.progress-50::after {
-  display: block;
-  content: "";
-  height: 10px;
-  width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
-  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-25::after {
@@ -232,6 +239,17 @@ h3 {
   background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 25%,#e6dbc9 25%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #bc9353 0%,#bc9353 25%,#e6dbc9 25%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.progress-50::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-75::after {
@@ -254,44 +272,59 @@ h3 {
 }
 
 .main-section-skills-header {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
-  margin-bottom: .6em;
+  margin-bottom: .2em;
 }
 
-.main-section-skills-text {
+.skill-text {
   font-size: 1.2em;
   padding-top: .1em;
 }
 
-.main-section-work-company-name {
+.main-section-work-item li {
+  margin-bottom: .2em;
+}
+
+.main-section-work-item + .main-section-work-item {
+  margin-top: 4em;
+}
+
+.text-bold {
+  font-family: "Segoe UI Black", sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
 }
 
-.main-section-work-experience-period {
-  color: #bc9353;
+.text-demibold {
   font-weight: bold;
-  padding-left: 1.5em;
 }
 
-.main-section-work-location {
-  font-size: 1.3em;
-}
-
-.main-section-work-location::after {
-  content: ", ";
-}
-
-.main-section-work-position {
-  font-size: 1.3em;
+.text-italic {
   font-style: italic;
 }
 
-.underline {
+.text-underline {
   text-decoration: underline;
-  margin: 0;
-  margin-bottom: .2em;
+}
+
+.text-l-1-2 {
+  font-size: 1.2em;
+}
+
+.text-l-1-3 {
+  font-size: 1.3em;
+}
+
+.text-l-1-5 {
+  font-size: 1.5em;
+}
+
+.text-brown {
+  color: #bc9353;
+}
+
+.list-style-type-none {
+  list-style-type: none;
 }
 
 .list-style-type-dash {
@@ -303,6 +336,18 @@ h3 {
   padding-right: .3em;
 }
 
-.main-section-work-item + .main-section-work-item {
-  margin-top: 4em;
+.m-t-1 {
+  margin-top: 1em;
+}
+
+.m-t-2 {
+  margin-top: 2em;
+}
+
+.m-b-7 {
+  margin-bottom: 7em;
+}
+
+.p-l-1-5 {
+  padding-left: 1.5em;
 }
