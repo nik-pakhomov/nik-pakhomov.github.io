@@ -1,3 +1,5 @@
+/* Specialized rules */
+
 body {
   background-color: #acacac;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -53,32 +55,6 @@ body {
   text-align: center;
 }
 
-.hr {
-  height: 1px;
-  border: 0;
-}
-
-.hr-s {
-  border-top: 1px solid #bc9353;
-}
-
-.hr-m {
-  border-top: 2px solid #bc9353;
-}
-
-.hr-l {
-  border-top: 3px solid #bc9353;
-}
-
-.hr-info-section {
-  margin-top: 2em;
-  margin-bottom: 4em;
-}
-
-.hr-main-section {
-  margin: 0;
-}
-
 .main-photo {
   background-image: url('../assets/nikita_pakhomov_main_photo.jpg');
   background-position: top left;
@@ -87,35 +63,6 @@ body {
   width: auto;
   border: 5px solid #bc9353;
   border-radius: 300px;
-}
-
-h1 {
-  color: #ffffff;
-  font-size: 2.2em;
-  margin-bottom: .3em;
-  font-weight: normal;
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 2em;
-  margin-top: -.3em;
-  margin-bottom: 0;
-  font-weight: normal;
-}
-
-h3 {
-  color: #bc9353;
-  font-weight: normal;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
 
 .info-section-info-table {
@@ -198,7 +145,6 @@ p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 65%;
-
   position: absolute;
   margin-top: -25px;
   margin-left: -45px;
@@ -242,15 +188,108 @@ p {
   margin: 0;
 }
 
+.main-section-skills-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: .2em;
+}
+
+.main-section-work-item li {
+  margin-bottom: .2em;
+}
+
+.main-section-work-item+.main-section-work-item {
+  margin-top: 4em;
+}
+
+.contacts-section-item {
+  color: #ffffff;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-section-item:not(:nth-child(3)) {
+  border-right: 1px solid #e6dbc9;
+}
+
+.copyright-p {
+  color: white;
+  padding-bottom: 1em;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* Common rules */
+
+.hr-info-section {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.hr-main-section {
+  margin: 0;
+}
+
+.hr {
+  height: 1px;
+  border: 0;
+}
+
+.hr-s {
+  border-top: 1px solid #bc9353;
+}
+
+.hr-m {
+  border-top: 2px solid #bc9353;
+}
+
+.hr-l {
+  border-top: 3px solid #bc9353;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.2em;
+  margin-bottom: .3em;
+  font-weight: normal;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 2em;
+  margin-top: -.3em;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+h3 {
+  color: #bc9353;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .progress-25::after {
   display: block;
   content: "";
   height: 10px;
   width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
-  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 25%,#e6dbc9 25%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #bc9353 0%,#bc9353 25%,#e6dbc9 25%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-50::after {
@@ -259,9 +298,12 @@ p {
   height: 10px;
   width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
-  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #bc9353 0%,#bc9353 50%,#e6dbc9 50%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-75::after {
@@ -270,9 +312,12 @@ p {
   height: 10px;
   width: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
-  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #bc9353 0%,#bc9353 75%,#e6dbc9 75%,#e6dbc9 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #bc9353 0%,#bc9353 75%,#e6dbc9 75%,#e6dbc9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-100::after {
@@ -283,24 +328,103 @@ p {
   background: #bc9353;
 }
 
-.main-section-skills-header {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: .2em;
-}
-
 .skill-text {
   font-size: 1.2em;
   padding-top: .1em;
 }
 
-.main-section-work-item li {
-  margin-bottom: .2em;
+.social-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color .3s ease;
+  padding-left: 1.3em;
 }
 
-.main-section-work-item + .main-section-work-item {
-  margin-top: 4em;
+.social-link:hover {
+  color: #a39989;
 }
+
+.social-link:active {
+  color: #ffffff;
+}
+
+.svg-icon {
+  width: auto;
+  height: 45px;
+  fill: currentColor;
+}
+
+.connect-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: .3em;
+}
+
+.connect-link:hover {
+  text-decoration: underline;
+  color: #a39989;
+}
+
+.connect-link:active {
+  color: #ffffff;
+}
+
+.connect-link-phone {
+  background-image: url("/assets/icons/telephone.svg");
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.connect-link-email {
+  background-image: url("/assets/icons/email.svg");
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.connect-link-skype {
+  background-image: url("/assets/icons/skype.svg");
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.download-pdf-button {
+  background: #e6dbc9;
+  background: -moz-linear-gradient(top, #e6dbc9 0%, #b29672 25%, #b28d5c 49%, #b7915b 75%, #bc9353 100%);
+  background: -webkit-linear-gradient(top, #e6dbc9 0%, #b29672 25%, #b28d5c 49%, #b7915b 75%, #bc9353 100%);
+  background: linear-gradient(to bottom, #e6dbc9 0%, #b29672 25%, #b28d5c 49%, #b7915b 75%, #bc9353 100%);
+  color: #000000;
+  text-decoration: none;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 3px;
+}
+
+.download-pdf-button:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.download-pdf-button:active {
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* Helpers */
 
 .text-bold {
   font-family: "Segoe UI Black", sans-serif;
@@ -362,114 +486,4 @@ p {
 
 .p-l-1-5 {
   padding-left: 1.5em;
-}
-
-.social-link {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color .3s ease;
-  padding-left: 1.3em;
-}
-
-.social-link:hover {
-  color: #a39989;
-}
-
-.social-link:active {
-  color: #ffffff;
-}
-
-.svg-icon {
-  width: auto;
-  height: 45px;
-  fill: currentColor;
-}
-
-.contacts-section-item {
-  color: #ffffff;
-  padding: 1em 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contacts-section-item:not(:nth-child(3))  {
-  border-right: 1px solid #e6dbc9;
-}
-
-.connect-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  margin-bottom: .3em;
-}
-
-.connect-link:hover {
-  text-decoration: underline;
-  color: #a39989;
-}
-
-.connect-link:active {
-  color: #ffffff;
-}
-
-.connect-link-phone {
-  background-image: url("/assets/icons/telephone.svg");
-  height: 20px;
-  width: 20px;
-  margin-right: 20px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline-block;
-}
-
-.connect-link-email {
-  background-image: url("/assets/icons/email.svg");
-  background-color: transparent;
-  height: 20px;
-  width: 20px;
-  margin-right: 20px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline-block;
-}
-
-.connect-link-skype {
-  background-image: url("/assets/icons/skype.svg");
-  height: 20px;
-  width: 20px;
-  margin-right: 20px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: inline-block;
-}
-
-.download-pdf-button {
-  background: #e6dbc9;
-  background: -moz-linear-gradient(top, #e6dbc9 0%, #b29672 25%, #b28d5c 49%, #b7915b 75%, #bc9353 100%);
-  background: -webkit-linear-gradient(top, #e6dbc9 0%,#b29672 25%,#b28d5c 49%,#b7915b 75%,#bc9353 100%);
-  background: linear-gradient(to bottom, #e6dbc9 0%,#b29672 25%,#b28d5c 49%,#b7915b 75%,#bc9353 100%);
-  color: #000000;
-  text-decoration: none;
-  padding: .5em;
-  font-weight: bold;
-  font-size: 1.5em;
-  border-radius: 3px;
-}
-
-.download-pdf-button:hover {
-  text-decoration: underline;
-  opacity: .8;
-}
-
-.download-pdf-button:active {
-  text-decoration: none;
-  opacity: 1;
-}
-
-.copyright-p {
-  color: white;
-  padding-bottom: 1em;
-  font-size: 1em;
-  font-style: italic;
 }
