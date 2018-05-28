@@ -283,13 +283,9 @@ p {
   content: "";
   height: 10px;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
   background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #bc9353 0%, #bc9353 25%, #e6dbc9 25%, #e6dbc9 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-50::after {
@@ -297,13 +293,9 @@ p {
   content: "";
   height: 10px;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
   background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #bc9353 0%, #bc9353 50%, #e6dbc9 50%, #e6dbc9 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-75::after {
@@ -311,13 +303,9 @@ p {
   content: "";
   height: 10px;
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9353+0,bc9353+50,e6dbc9+50,e6dbc9+100 */
   background: -moz-linear-gradient(left, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #bc9353 0%, #bc9353 75%, #e6dbc9 75%, #e6dbc9 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .progress-100::after {
