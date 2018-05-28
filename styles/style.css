@@ -7,7 +7,7 @@ body {
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 375px 6fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -38,7 +38,19 @@ body {
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: #000000;
+  display: flex;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.copyright-section {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #000000;
   border-radius: 0 0 5px 5px;
+  text-align: center;
 }
 
 .hr {
@@ -350,4 +362,114 @@ p {
 
 .p-l-1-5 {
   padding-left: 1.5em;
+}
+
+.social-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color .3s ease;
+  padding-left: 1.3em;
+}
+
+.social-link:hover {
+  color: #a39989;
+}
+
+.social-link:active {
+  color: #ffffff;
+}
+
+.svg-icon {
+  width: auto;
+  height: 45px;
+  fill: currentColor;
+}
+
+.contacts-section-item {
+  color: #ffffff;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-section-item:not(:nth-child(3))  {
+  border-right: 1px solid #e6dbc9;
+}
+
+.connect-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-bottom: .3em;
+}
+
+.connect-link:hover {
+  text-decoration: underline;
+  color: #a39989;
+}
+
+.connect-link:active {
+  color: #ffffff;
+}
+
+.connect-link-phone {
+  background-image: url("/assets/icons/telephone.svg");
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.connect-link-email {
+  background-image: url("/assets/icons/email.svg");
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.connect-link-skype {
+  background-image: url("/assets/icons/skype.svg");
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.download-pdf-button {
+  background: #e6dbc9;
+  background: -moz-linear-gradient(top, #e6dbc9 0%, #b29672 25%, #b28d5c 49%, #b7915b 75%, #bc9353 100%);
+  background: -webkit-linear-gradient(top, #e6dbc9 0%,#b29672 25%,#b28d5c 49%,#b7915b 75%,#bc9353 100%);
+  background: linear-gradient(to bottom, #e6dbc9 0%,#b29672 25%,#b28d5c 49%,#b7915b 75%,#bc9353 100%);
+  color: #000000;
+  text-decoration: none;
+  padding: .5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 3px;
+}
+
+.download-pdf-button:hover {
+  text-decoration: underline;
+  opacity: .8;
+}
+
+.download-pdf-button:active {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.copyright-p {
+  color: white;
+  padding-bottom: 1em;
+  font-size: 1em;
+  font-style: italic;
 }
