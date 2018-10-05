@@ -151,24 +151,24 @@ body {
 }
 
 .main-section-skills::before {
-  background-image: url("/assets/icons/star.svg");
+  background-image: url("../assets/icons/star.svg");
 }
 
 .main-section-work::before {
-  background-image: url("/assets/icons/graph-line-screen.svg");
+  background-image: url("../assets/icons/graph-line-screen.svg");
 }
 
 .main-section-work-experience::before {
-  background-image: url("/assets/icons/business-person.svg");
+  background-image: url("../assets/icons/business-person.svg");
 }
 
 .main-section-education::before {
-  background-image: url("/assets/icons/students-cap.svg");
+  background-image: url("../assets/icons/students-cap.svg");
   background-size: 85%;
 }
 
 .main-section-about-me::before {
-  background-image: url("/assets/icons/happy-face.svg");
+  background-image: url("../assets/icons/happy-face.svg");
   background-size: 70%;
 }
 
@@ -278,6 +278,16 @@ p {
   padding: 0;
 }
 
+.link {
+  text-decoration: none;
+  color: #bc9353;
+  border-bottom: 1px dashed #bc9353;
+}
+
+.link:hover {
+  border-bottom: none;
+}
+
 .progress-25::after {
   display: block;
   content: "";
@@ -359,7 +369,7 @@ p {
 }
 
 .connect-link-phone {
-  background-image: url("/assets/icons/telephone.svg");
+  background-image: url("../assets/icons/telephone.svg");
   height: 20px;
   width: 20px;
   margin-right: 20px;
@@ -369,7 +379,7 @@ p {
 }
 
 .connect-link-email {
-  background-image: url("/assets/icons/email.svg");
+  background-image: url("../assets/icons/email.svg");
   background-color: transparent;
   height: 20px;
   width: 20px;
@@ -380,7 +390,7 @@ p {
 }
 
 .connect-link-skype {
-  background-image: url("/assets/icons/skype.svg");
+  background-image: url("../assets/icons/skype.svg");
   height: 20px;
   width: 20px;
   margin-right: 20px;
@@ -410,6 +420,17 @@ p {
 .download-pdf-button:active {
   text-decoration: none;
   opacity: 1;
+}
+
+.virtial-health-partners-logo-s {
+  background-image: url("../assets/icons/virtual-health-partners-logo.png");
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-bottom: -5px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
 }
 
 /* Helpers */
